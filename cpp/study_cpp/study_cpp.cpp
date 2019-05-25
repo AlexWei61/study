@@ -6,17 +6,6 @@ using namespace std;
 #define X 5 
 
 
-
-template <typename T>
-void my_swap_pointer(T* a, T* b)
-{
-	T tmp = *a;
-	*a = *b;
-	*b = tmp;
-}
-
-
-
 template <class T>
 void my_swap(T& a, T& b)
 {
@@ -25,6 +14,16 @@ void my_swap(T& a, T& b)
 	b = tmp;
 }
 
+//add some comment to submit to github
+
+
+template <typename T>
+void my_swap_pointer(T* a, T* b)
+{
+	T tmp = *a;
+	*a = *b;
+	*b = tmp;
+}
 
 
 int main(int argc, char** argv) {
