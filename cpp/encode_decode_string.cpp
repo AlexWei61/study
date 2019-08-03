@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 #include <string>
 using namespace std;
+//add some comments here to try git merge from another person
 /*
 	encode steps:
 	1.每个字母左移三位 eg:e -> b c -> z
