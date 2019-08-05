@@ -2,8 +2,6 @@
 #include <string>
 using namespace std;
 
-
-
 long double calc_e(){
 	unsigned long long N = 60;
 	
