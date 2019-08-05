@@ -36,12 +36,21 @@ int ans(int n,int m,int hn,int hm){
 		}
 	}
 	clac_can_ha(hn,hm);
+	int tmp = 0;                             //¼ÆÊıÆ÷ 
 	while(true){
 		for(int i = 0;i<2;i++){
+			if(now_lo_x = n&&now_lo_y = m){
+				
+			}
 			while(true){
 				now_lo_x += cx[i];
 				now_lo_y += cy[i];
-				if(chessboard[now_lo_x][now_lo_y]){
+				if
+				if(chessboard[now_lo_x][now_lo_y]==-1){
+					break;
+				}
+				if(now_lo_x = n&&now_lo_y = m){
+					tmp++;
 					break;
 				}
 			} 
