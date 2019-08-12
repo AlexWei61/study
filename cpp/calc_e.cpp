@@ -16,6 +16,7 @@ int n;
 int main(){
 	cin>>n;
 	cout<<fixed<<setprecision(30)<<calc_e(n)<<endl;
+	//printf("%f.1",calc_e(n)); 
 }
 
 
