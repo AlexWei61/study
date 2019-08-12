@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//¹é²¢ÅÅĞòËã·¨ 
+
 void Merge(int num_list[], int l, int q, int r) {
 	int n = (r - l) + 1;
 	int* tmp = new int[n];
