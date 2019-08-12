@@ -39,5 +39,6 @@ int main() {
 	MergeSort(num_list, l, r);
 	for (int i = 0; i < 8; ++i)
 		cout << num_list[i] << " ";
+	return 0; 
 }
 
