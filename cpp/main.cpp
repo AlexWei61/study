@@ -340,7 +340,147 @@ int main(){
 	cout<<tmp<<endl;
 	return 0;
 }
+long long n;
+int main(){
+	long long tmpmax = 0;
+	cin>>n;
+	for(int i=1;i<=n;i++){
+		long long numi;
+		cin>>numi;
+		tmpmax = max(tmpmax,numi);
+	}
+	cout<<tmpmax<<endl;
+	return 0;
+} 
+
+int main(){
+	double x;
+	int n;
+	cin>>x>>n;
+	for(int i=1;i<=n;i++){
+		x += x*0.001;       //x = x+x*0.001
+	} 
+	cout<<x;
+	reture 0;
+} 
+
+int main(){
+	double income;
+	int n;
+	cin>>income>>n;
+	double plus = 0;
+	for(int i=1;i<=n;i++){
+		plus = 100+12*income*0.005;
+		income += plus;
+	}
+	cout<<fixed<<setprecision(1)<<income<<endl;
+}
+
+long unsigned long int clac_fibonacci_sequence(int n){
+	unsigned long int fibonacci_sequence[100001];
+	fibonacci_sequence[0] = 1;
+	fibonacci_sequence[1] = 1; 
+	for (int i = 2; i <= n-1;i++) {
+		fibonacci_sequence[i] = fibonacci_sequence[i - 1] + fibonacci_sequence[i - 2];
+		cout << fibonacci_sequence[i] << " ";
+	}
+	cout<<endl<<endl;
+	return fibonacci_sequence[n-1];
+}
+
+int main(){
+	long long n;
+	cin>>n;
+	cout<<clac_fibonacci_sequence(n)<<endl;
+	return 0;
+}
+
+int clac_max(int n,int num_list[101]){
+	int maxn = 0;
+	for(int i=0;i<n;i++){
+		maxn = max(maxn,num_list[i]);
+	}
+	return maxn;
+}
+
+int main(){
+	int n;
+	cin>>n;
+	int s_list[101];
+	for(int i=0;i<n;i++){
+		cin>>s_list[i];
+	}
+	cout<<clac_max(n,s_list)<<endl;
+}
+
+int fmtn_sum_odd_num(int m,int n){
+	int sum = 0;
+	for(int i=m;i<=n;i++){
+		if(i%2 != 0){
+			sum += i;
+		}
+	}
+	return sum;
+}
+
+int main(){
+	int m,n;
+	cin>>m>>n;
+	cout<<fmtn_sum_odd_num(m,n)<<endl;
+	return 0;
+}
+
+void check_efficiency(int n,int a[21][3]){
+	double v_jiweijiu = (a[0][0] - a[0][1])/a[0][0];
+	for(int i = 1;i<n;i++){
+		double v_i = (a[i][0]-a[i][1])/a[i][0];
+		if(v_jiweijiu-v_i>0.05){
+			cout<<"beeter"<<endl;
+		}
+		else if(v_jiweijiu-v_i<0.05){
+			cout<<"worse"<<endl;
+		}
+		else{
+			cout<<"same"<<endl;
+		}
+	}
+} 
+
+int main(){
+	int n;
+	int a[21][3];
+	cin>>n;
+	for(int i = 0;i<n;i++){
+		for(int k = 0;k<2;k++){
+			cin>>a[i][k];
+		}
+	}
+	check_efficiency(n,a[21][3]);
+	return 0;
+}
 */
+
+int sum1(int n) {
+	int num = 0;
+	int sum = 1;
+	for (int i = 0; i <= n; i++) {
+		num += i;
+		sum += num;
+	}
+	return sum;
+}
+
+int p, q;
+
+int main() {
+	cin>>p>>q;
+	int sum;
+	for (int i = p; i <= q; i++) {
+		sum += sum1(i);
+	}
+	cout << sum;
+	return 0;
+}
 
 
 

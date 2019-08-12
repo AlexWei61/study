@@ -9,9 +9,14 @@ using namespace std;
 int K;
 int n; 
 int main(){
-	float Sn;
+	doulb Sn;
 	cin>>K;
-	
-	return 0;
+	while(int i = 1;;i++){
+		Sn += 1/i;
+		if(k<Sn){
+			cout<<i;
+			return 0;
+		}
+	}
 }		
 
