@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//Í°ÅÅÐòËã·¨ 
+
 void BucketSort(int n, int num_list[]) {
 	cin >> n;
 	for (int i = 0; i < n; i++) {
